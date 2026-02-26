@@ -53,7 +53,7 @@ const Sidebar = () => {
                     <ShieldCheck size={20} className="text-white" />
                 </div>
                 <div className="flex flex-col">
-                    <span className="text-lg font-black tracking-tighter uppercase italic leading-none">Mission 180</span>
+                    <span className="text-lg font-black tracking-tighter uppercase italic leading-none">My Schedule</span>
                     <span className="text-[8px] font-black text-zinc-600 tracking-[0.3em] uppercase mt-0.5">Day {getCurrentDay()}</span>
                 </div>
             </div>

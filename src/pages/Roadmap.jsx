@@ -33,7 +33,7 @@ const Roadmap = () => {
         {
             days: '151-180', title: 'Phase VI: Target Engagement',
             ielts: ['EXAM DAY (Target 7.5)', 'Final Review of Academic Templates', 'Post-Exam Reflection'],
-            infosec: ['Job Application Blitz: Apply 5 Roles/Day', 'Final CTF Challenges (HackTheBox)', 'GRADUATION: Career Ready Portfolio', 'MISSION 180 COMPLETE']
+            infosec: ['Job Application Blitz: Apply 5 Roles/Day', 'Final CTF Challenges (HackTheBox)', 'GRADUATION: Career Ready Portfolio', 'MY SCHEDULE COMPLETE']
         }
     ];
 
