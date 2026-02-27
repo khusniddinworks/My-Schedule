@@ -219,7 +219,7 @@ export const useStore = create(
             },
         }),
         {
-            name: 'mission-180-storage',
+            name: 'my-schedule-v1',
         }
     )
 );
