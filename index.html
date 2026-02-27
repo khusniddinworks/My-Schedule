@@ -18,7 +18,29 @@
 </head>
 
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <!-- Diagnostika: Agar JS yuklanmasa shu xabar chiqadi -->
+    <div id="emergency-loader" style="padding: 40px; text-align: center; font-family: sans-serif; color: #555;">
+      <h2 style="color: #8B5CF6;">My Schedule System</h2>
+      <p>Initializing core systems...</p>
+      <div id="error-display"
+        style="color: #ff4d4d; font-size: 12px; margin-top: 20px; display: none; background: #111; padding: 15px; border-radius: 10px;">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Agar 5 soniya ichida React darsni boshlamasa, demak assetlar yuklanmagan
+    window.addEventListener('error', function (e) {
+      const display = document.getElementById('error-display');
+      if (display) {
+        display.style.display = 'block';
+        display.innerText = 'CRITICAL_LOAD_ERROR: ' + e.message + ' in ' + e.filename;
+        const loader = document.getElementById('emergency-loader');
+        if (loader) loader.querySelector('p').innerText = 'System failed to boot.';
+      }
+    }, true);
+  </script>
   <script type="module" src="/src/main.jsx"></script>
   <script>
     if ('serviceWorker' in navigator) {

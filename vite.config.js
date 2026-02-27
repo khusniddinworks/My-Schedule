@@ -8,6 +8,7 @@ export default defineConfig({
         react(),
         tailwindcss(),
     ],
+    base: './', // GitHub Pages va Render uchun eng xavfsiz yo'l
     build: {
         chunkSizeWarningLimit: 1000,
     }
