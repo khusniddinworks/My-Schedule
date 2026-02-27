@@ -8,7 +8,7 @@ export default defineConfig({
         react(),
         tailwindcss(),
     ],
-    base: './', // GitHub Pages va Render uchun eng xavfsiz yo'l
+    base: '/My-Schedule/', // GitHub Pages uchun repository nomi
     build: {
         chunkSizeWarningLimit: 1000,
     }
